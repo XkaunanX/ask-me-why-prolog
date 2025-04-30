@@ -1,0 +1,75 @@
+C:\Users\damip\OneDrive\Escritorio\facultad\2024\Paradigma de la programacion\Prolog\basico>swipl antepasados.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- progenitor(pedro, Hijo).
+Hijo = carlos ;
+Hijo = lucia ;
+Hijo = elena.
+
+2 ?- progenitor(juan, elena).
+false.
+
+3 ?- progenitor(Progenitor, carlos).
+Progenitor = pedro ;
+Progenitor = maria.
+
+4 ?- progenitor(Maria, Descendiente).
+Maria = juan,
+Descendiente = pedro ;
+Maria = ana,
+Descendiente = pedro ;
+Maria = pedro,
+Descendiente = carlos ;
+Maria = maria,
+Descendiente = carlos ;
+Maria = pedro,
+Descendiente = lucia ;
+Maria = maria,
+Descendiente = lucia ;
+Maria = carlos,
+Descendiente = elena ;
+Maria = lucia,
+Descendiente = fernando ;
+Maria = jorge,
+Descendiente = ana ;
+Maria = lucia,
+Descendiente = raul ;
+Maria = elena,
+Descendiente = diego ;
+Maria = carlos,
+Descendiente = isabel ;
+Maria = fernando,
+Descendiente = sofia ;
+Maria = maria,
+Descendiente = diego ;
+Maria = sofia,
+Descendiente = simon ;
+Maria = ana,
+Descendiente = mateo ;
+Maria = pedro,
+Descendiente = elena ;
+Maria = raquel,
+Descendiente = javier ;
+Maria = diego,
+Descendiente = paola ;
+Maria = isabel,
+Descendiente = nicolas ;
+Maria = raul,
+Descendiente = veronica ;
+Maria = javier,
+Descendiente = adriana ;
+Maria = paola,
+Descendiente = lucas.
+
+5 ?- antepasado(X, fernando).
+X = lucia ;
+X = pedro ;
+X = maria ;
+X = juan ;
+X = ana ;
+X = jorge ;

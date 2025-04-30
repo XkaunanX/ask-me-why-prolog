@@ -1,0 +1,179 @@
+C:\Users\damip\OneDrive\Escritorio\facultad\2024\Paradigma de la programacion\Prolog\basico>swipl progenitores.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- hombre(_).
+true .
+
+2 ?- mujer(_).
+true .
+
+3 ?- progenitor(ana, juan).
+true.
+
+4 ?- hombre(ana).
+false.
+
+5 ?- mujer(juan).
+false.
+
+6 ?- hombre(X).
+X = juan ;
+X = tomas ;
+X = braian ;
+X = mariano ;
+X = valentino ;
+X = damian ;
+X = joaquin ;
+X = andres ;
+X = pedro ;
+X = carlos ;
+X = federico ;
+X = ignacio ;
+X = miguel ;
+X = roberto ;
+X = sergio ;
+X = victor ;
+X = alejandro ;
+X = facundo ;
+X = mateo.
+
+7 ?- mujer(X).
+X = ana ;
+X = beatriz ;
+X = carla ;
+X = diana ;
+X = elena ;
+X = fatima ;
+X = gabriela ;
+X = helena ;
+X = isabel ;
+X = julia ;
+X = karla ;
+X = lucia ;
+X = marta ;
+X = natalia ;
+X = olga.
+
+8 ?- progenitor(X,Y).
+X = ana,
+Y = juan ;
+X = beatriz,
+Y = tomas ;
+X = carla,
+Y = braian ;
+X = diana,
+Y = mariano ;
+X = elena,
+Y = valentino ;
+X = fatima,
+Y = damian ;
+X = gabriela,
+Y = joaquin ;
+X = helena,
+Y = andres ;
+X = isabel,
+Y = pedro ;
+X = julia,
+Y = carlos ;
+X = karla,
+Y = federico ;
+X = lucia,
+Y = ignacio ;
+X = marta,
+Y = miguel ;
+X = natalia,
+Y = roberto ;
+X = olga,
+Y = sergio ;
+X = maria,
+Y = victor ;
+X = susana,
+Y = alejandro ;
+X = rosa,
+Y = facundo ;
+X = paula,
+Y = mateo.
+
+9 ?- progenitor(ana, X).
+X = juan.
+
+10 ?- progenitor(X, juan).
+X = ana.
+
+11 ?- \+ hombre(ana).
+true.
+
+12 ?- \+ mujer(juan).
+true.
+
+13 ?- madre(ana,juan).
+true.
+
+14 ?- madre(X,Y).
+X = ana,
+Y = juan ;
+X = beatriz,
+Y = tomas ;
+X = carla,
+Y = braian ;
+X = diana,
+Y = mariano ;
+X = elena,
+Y = valentino ;
+X = fatima,
+Y = damian ;
+X = gabriela,
+Y = joaquin ;
+X = helena,
+Y = andres ;
+X = isabel,
+Y = pedro ;
+X = julia,
+Y = carlos ;
+X = karla,
+Y = federico ;
+X = lucia,
+Y = ignacio ;
+X = marta,
+Y = miguel ;
+X = natalia,
+Y = roberto ;
+X = olga,
+Y = sergio.
+
+15 ?- madre(X, Y), progenitor(X, Y).
+X = ana,
+Y = juan ;
+X = beatriz,
+Y = tomas ;
+X = carla,
+Y = braian ;
+X = diana,
+Y = mariano ;
+X = elena,
+Y = valentino ;
+X = fatima,
+Y = damian ;
+X = gabriela,
+Y = joaquin ;
+X = helena,
+Y = andres ;
+X = isabel,
+Y = pedro ;
+X = julia,
+Y = carlos ;
+X = karla,
+Y = federico ;
+X = lucia,
+Y = ignacio ;
+X = marta,
+Y = miguel ;
+X = natalia,
+Y = roberto ;
+X = olga,
+Y = sergio.

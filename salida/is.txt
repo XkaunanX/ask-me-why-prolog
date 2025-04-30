@@ -1,0 +1,91 @@
+C:\Users\damip\OneDrive\Escritorio\facultad\2024\Paradigma de la programacion\Prolog\operadores>swipl is.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- suma(7, 5, Z).
+Z = 12.
+
+2 ?- suma(0, 10, Z).
+Z = 10.
+
+3 ?- resta(15, 6, Z).
+Z = 9.
+
+4 ?- resta(8, 12, Z).
+Z = -4.
+
+5 ?- multiplicacion(9, 4, Z).
+Z = 36.
+
+6 ?- multiplicacion(0, 5, Z).
+Z = 0.
+
+7 ?- division(20, 5, Z).
+Z = 4.
+
+8 ?- division(15, 3, Z).
+Z = 5.
+
+9 ?- potencia(3, 3, Z).
+Z = 27.
+
+10 ?- potencia(5, 2, Z).
+Z = 25.
+
+11 ?- modulo(15, 4, Z).
+Z = 3.
+
+12 ?- modulo(12, 7, Z).
+Z = 5.
+
+13 ?- raiz(25, Z).
+Z = 5.0.
+
+14 ?- raiz(9, Z).
+Z = 3.0.
+
+15 ?- mayor_que(12, 7).
+true.
+
+16 ?- mayor_que(5, 10).
+false.
+
+17 ?- menor_que(2, 8).
+true.
+
+18 ?- menor_que(20, 5).
+false.
+
+19 ?- igual_a(6, 6).
+true.
+
+20 ?- igual_a(9, 3).
+false.
+
+21 ?- par(10).
+true.
+
+22 ?- par(7).
+false.
+
+23 ?- impar(11).
+true.
+
+24 ?- impar(4).
+false.
+
+25 ?- mayor(14, 18, Z).
+Z = 18.
+
+26 ?- mayor(25, 12, Z).
+Z = 25.
+
+27 ?- posit(3).
+true.
+
+28 ?- posit(-2).
+false.

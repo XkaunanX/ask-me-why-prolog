@@ -1,0 +1,91 @@
+C:\Users\damip\OneDrive\Escritorio\facultad\2024\Paradigma de la programacion\Prolog\basico>swipl querer.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- eshombre(X),quiere(X,Y).
+X = juan,
+Y = maria ;
+X = juan,
+Y = elena ;
+X = pedro,
+Y = raquel ;
+X = pedro,
+Y = belen ;
+X = carlos,
+Y = julia ;
+X = diego,
+Y = ana ;
+X = fernando,
+Y = gabriela ;
+X = roberto,
+Y = isabel ;
+X = andres,
+Y = carla ;
+X = mateo,
+Y = fatima ;
+X = alberto,
+Y = diana.
+
+2 ?- eshombre(X).
+X = juan ;
+X = pedro ;
+X = luis ;
+X = carlos ;
+X = diego ;
+X = fernando ;
+X = roberto ;
+X = andres ;
+X = mateo ;
+X = alberto.
+
+3 ?- quiere(Hombre, _).
+Hombre = juan ;
+Hombre = juan ;
+Hombre = pedro ;
+Hombre = pedro ;
+Hombre = carlos ;
+Hombre = diego ;
+Hombre = fernando ;
+Hombre = roberto ;
+Hombre = andres ;
+Hombre = mateo ;
+Hombre = alberto.
+
+4 ?- quiere(juan, Persona).
+Persona = maria ;
+Persona = elena.
+
+5 ?- quiere(Hombre, Persona).
+Hombre = juan,
+Persona = maria ;
+Hombre = juan,
+Persona = elena ;
+Hombre = pedro,
+Persona = raquel ;
+Hombre = pedro,
+Persona = belen ;
+Hombre = carlos,
+Persona = julia ;
+Hombre = diego,
+Persona = ana ;
+Hombre = fernando,
+Persona = gabriela ;
+Hombre = roberto,
+Persona = isabel ;
+Hombre = andres,
+Persona = carla ;
+Hombre = mateo,
+Persona = fatima ;
+Hombre = alberto,
+Persona = diana.
+
+6 ?- quiere(_, maria).
+true.
+
+7 ?- (quiere(Hombre, julia); quiere(Hombre, isabel)).
+Hombre = carlos ;
+Hombre = roberto.

@@ -1,0 +1,46 @@
+C:\Users\damip\OneDrive\Escritorio\facultad\2024\Paradigma de la programacion\Prolog\basico>
+C:\Users\damip\OneDrive\Escritorio\facultad\2024\Paradigma de la programacion\Prolog\basico>swipl cuidar.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- cuida(Persona, pedro).
+false.
+
+2 ?- cuida(raquel, Quien).
+Quien = juan.
+
+3 ?- cuida(Persona, Quien).
+Persona = raquel,
+Quien = juan ;
+Persona = julia,
+Quien = andres ;
+Persona = fatima,
+Quien = carlos ;
+Persona = diana,
+Quien = fernando ;
+Persona = maria,
+Quien = roberto.
+
+4 ?- ayuda(Quien, carlos).
+Quien = andres.
+
+5 ?- cuida(juan, _).
+false.
+
+6 ?- consuela(Persona, Alguien).
+false.
+
+7 ?- ayuda(_, roberto).
+true.
+
+8 ?- notrabaja(Persona).
+Persona = belen ;
+Persona = raquel ;
+Persona = julia ;
+Persona = fatima ;
+Persona = diana ;
+Persona = maria.

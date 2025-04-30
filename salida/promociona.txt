@@ -1,0 +1,45 @@
+C:\Users\damip\OneDrive\Escritorio\facultad\2024\Paradigma de la programacion\Prolog\listas>swipl promociona.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- promociona(juan).
+true ;
+false.
+
+2 ?- listaPromo([juan, pedro, maria, luis, ana, fernando], ListaPromovidos).
+ListaPromovidos = [juan, maria] ;
+false.
+
+3 ?- listaAprob([juan, pedro, maria, luis, ana, fernando]).
+juan
+pedro
+maria
+false.
+
+4 ?- findall(X, promociona(X), ListaPromovidos), length(ListaPromovidos, Cantidad).
+ListaPromovidos = [juan, maria],
+Cantidad = 2.
+
+5 ?- asistencia(maria).
+true.
+
+6 ?- promociona(pedro).
+false.
+
+7 ?- (promociona(X) -> write(X), nl; true), fail.
+juan
+false.
+
+8 ?- listaPromo([juan, pedro, maria, luis, ana, fernando], _),(promociona(X) -> write(X), nl; true).
+juan
+X = juan ;
+false.
+
+9 ?- findall(_, promociona(_), ListaPromovidos), length(ListaPromovidos, Cantidad), write(Cantidad).
+2
+ListaPromovidos = [_, _],
+Cantidad = 2.
